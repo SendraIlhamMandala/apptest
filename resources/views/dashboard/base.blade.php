@@ -85,9 +85,9 @@
 
 
     <!-- CoreUI and necessary plugins-->
+    <script src="{{ asset('js/coreui-utils.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.0.2/dist/js/coreui.bundle.min.js"  crossorigin="anonymous"></script>   
     {{-- <script src="{{ secure_asset('js/coreui-utils.js') }}"></script>
-    <script src="{{ asset('js/coreui-utils.js') }}"></script>
     <script src="/js/coreui-utils.js"></script> --}}
     @yield('javascript')
 
