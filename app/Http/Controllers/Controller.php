@@ -59,14 +59,23 @@ class Controller extends BaseController
 		// dd(collect($newOutput) );
 
 		// dd($separatedOutput);
-
+		if (isset($newOutput)) {
+			# code...
 		$collectNewOutput = collect($newOutput);
 		$dataJumlah = [
 			'jumlahPrefiks' => Controller::has_dupes($collectNewOutput->pluck('Prefiks ')),
 			'jumlahInfiks' => Controller::has_dupes($collectNewOutput->pluck('Infiks ')),
 			'jumlahSufiks' => Controller::has_dupes($collectNewOutput->pluck('Sufiks ')),
 			'jumlahConfiks' => Controller::has_dupes($collectNewOutput->pluck('Confiks ')),	
-		];
+		];	}
+		else{
+			$dataJumlah = [
+				'jumlahPrefiks' => '',
+				'jumlahInfiks' => '',
+				'jumlahSufiks' => '',
+				'jumlahConfiks' => '',	
+			];
+		}
 
 		// dd(Controller::has_dupes($collectNewOutput->pluck('Confiks ')->toArray()));
 
