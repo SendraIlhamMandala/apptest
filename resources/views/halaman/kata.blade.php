@@ -321,8 +321,8 @@
               scrollX: true,
               scrollCollapse: true,
               columns: [
-                  {data: "id_kecap", className: 'id_kecap'},
-                  {data: "kecap", className: 'kecap'},                
+                  {data: "id_token", className: 'id_kecap'},
+                  {data: "token", className: 'kecap'},                
                   {data: "action", className: 'ints'},                
                
               ]  

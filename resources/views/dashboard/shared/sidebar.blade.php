@@ -4,10 +4,14 @@
             <li class="c-sidebar-nav-item">
               <a class="c-sidebar-nav-link" href="/">
                 <i class="c-sidebar-nav-icon cil-speedometer"></i> Dashboard
-                <span class="badge badge-primary">NEW</span>
+                {{-- <span class="badge badge-primary">NEW</span> --}}
               </a>
             </li>
-            <li class="c-sidebar-nav-title">Theme</li>
+            <li class="c-sidebar-nav-item">
+              <a class="c-sidebar-nav-link" href="/typography">
+                <i class="c-sidebar-nav-icon cil-account-logout"></i> logout</a>
+            </li>
+            {{-- <li class="c-sidebar-nav-title">Theme</li>
             <li class="c-sidebar-nav-item">
               <a class="c-sidebar-nav-link" href="/colors">
                 <i class="c-sidebar-nav-icon cil-drop"></i> Colors</a>
@@ -196,8 +200,8 @@
                 <i class="c-sidebar-nav-icon cil-layers"></i> Try CoreUI
                 <strong>PRO</strong>
               </a>
-            </li>
+            </li> --}}
           </ul>
         </nav>
-        <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        {{-- <button class="sidebar-minimizer brand-minimizer" type="button"></button> --}}
       </div>

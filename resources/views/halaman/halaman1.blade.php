@@ -93,7 +93,8 @@
             @endisset
 
 
-
+            @if (!isset($output))
+                    
             <div class="col-12">
                 <div class="row">
                     <div class="col-4 ">
@@ -123,6 +124,9 @@
 
                 </div>
             </div>
+
+            @endif
+
             <div class="col-12 mb-4">
                 <!-- /.row-->
                 <div class="row">
@@ -322,11 +326,11 @@
             scrollX: true,
             scrollCollapse: true,
             columns: [{
-                    data: "id_kecap",
+                    data: "id_token",
                     className: 'id_kecap'
                 },
                 {
-                    data: "kecap",
+                    data: "token",
                     className: 'kecap'
                 },
                 {

@@ -152,19 +152,22 @@ class Controller extends BaseController
 
 	public function prosesTabelKata()
 	{
-		$query = Kecap::query(); 
+		// $query = Kecap::query(); 
+		$query = DB::table('filter_tokens')->select('id_token','token'); 
 
 		// dd($query);
-		return DataTables::eloquent($query)
+		// return DataTables::eloquent($query)
+	
+		return Datatables::queryBuilder($query)
 		->addColumn('action', function ($user) {
-			$urlHalaman = route('halaman1.kata',['kata'=>$user->kecap]);
-
+			$urlHalaman = route('halaman1.kata',['kata'=>$user->token]);
 			return 
 			'<a href="'.$urlHalaman.'" class="btn btn-dark">Detail</a>'
 			// '<a href="#link" class="btn btn-info" role="button">Link Button</a>'
 			;
 		})
 		->make(true);
+		// ->make(true);
 		
 	}
 

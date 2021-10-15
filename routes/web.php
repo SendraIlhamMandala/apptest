@@ -13,7 +13,7 @@
 
 use App\Http\Controllers\Controller;
 
-
+        Route::get('/', function () {           return redirect()->route('halaman1');});
         Route::get('/colors', function () {     return view('dashboard.colors'); });
         Route::get('/typography', function () { return view('dashboard.typography'); });
         Route::get('/charts', function () {     return view('dashboard.charts'); });
