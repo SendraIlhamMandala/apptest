@@ -35,10 +35,10 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Icons-->
-    <link href="{{ secure_asset('css/free.min.css') }}" rel="stylesheet"> <!-- icons -->
-    <link href="{{ secure_asset('css/flag-icon.min.css') }}" rel="stylesheet"> <!-- icons -->
+    <link href="{{ asset('css/free.min.css') }}" rel="stylesheet"> <!-- icons -->
+    <link href="https://raw.githubusercontent.com/lipis/flag-icon-css/master/css/flag-icon.min.css" rel="stylesheet"> <!-- icons -->
     <!-- Main styles for this application-->
-    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.0.2/dist/css/coreui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
     <script>
@@ -62,7 +62,8 @@
     @yield('content') 
 
     <!-- CoreUI and necessary plugins-->
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.0.2/dist/js/coreui.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="{{ asset('js/coreui.bundle.min.js') }}"></script>
+
     @yield('javascript')
 
   </body>

@@ -6,7 +6,7 @@
 <div class="container-fluid">
   <div class="fade-in">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="col-sm-12">
         <div class="card">
           <div class="card-header"><h4>Menu Elements</h4></div>
             <div class="card-body">
@@ -37,6 +37,7 @@
             echo '<tr>';
             echo '<td>';
             if($data['hasIcon'] === true && $data['iconType'] === 'coreui'){
+                echo '<svg class="c-nav-icon edit-menu-icon"><use xlink:href="/assets/icons/coreui/free-symbol-defs.svg#' . $data['icon'] . '"></use></svg>';    
                 echo '<i class="' . $data['icon'] . '"></i>';
             }
             echo '</td>';
@@ -98,7 +99,7 @@
               ?>
 
 
-                <table class="table table-striped table-bordered datatable table-responsive-sm ">
+                <table class="table table-striped table-bordered datatable">
                     <thead>
                         <tr>
                             <th></th>
@@ -121,7 +122,9 @@
                             <td>
                                 @if($menuel['hasIcon'] === true)
                                     @if($menuel['iconType'] === 'coreui')
-                                    
+                                    <svg class="c-nav-icon edit-menu-icon">
+                                        <use xlink:href="/assets/icons/coreui/free-symbol-defs.svg#{{ $menuel['icon'] }}"></use>
+                                    </svg> 
                                     <i class="{{ $menuel['icon'] }}"></i> 
                                     @endif
                                 @endif 
@@ -165,7 +168,9 @@
                             <td>
                                 @if($menuel['hasIcon'] === true)
                                     @if($menuel['iconType'] === 'coreui')
-                                        
+                                        <svg class="c-nav-icon edit-menu-icon">
+                                            <use xlink:href="/assets/icons/coreui/free-symbol-defs.svg#{{ $menuel['icon'] }}"></use>
+                                        </svg> 
                                         <i class="{{ $menuel['icon'] }}"></i> 
                                     @endif
                                 @endif 

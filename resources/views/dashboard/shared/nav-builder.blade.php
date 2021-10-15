@@ -36,6 +36,8 @@ if(!function_exists('renderDropdown')){
             <img class="c-sidebar-brand-minimized" src="{{ url('assets/brand/coreui-signet-white.svg') }}" width="118" height="46" alt="CoreUI Logo">
         </div>
         <ul class="c-sidebar-nav">
+      @include('dashboard.shared.sidebar')
+
         @if(isset($appMenus['sidebar menu']))
             @foreach($appMenus['sidebar menu'] as $menuel)
                 @if($menuel['slug'] === 'link')

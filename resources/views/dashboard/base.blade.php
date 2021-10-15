@@ -36,9 +36,8 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Icons-->
     <link href="{{ asset('css/free.min.css') }}" rel="stylesheet"> <!-- icons -->
-    <link href="{{ asset('css/flag-icon.min.css') }}" rel="stylesheet"> <!-- icons -->
+    <link href="https://raw.githubusercontent.com/lipis/flag-icon-css/master/css/flag-icon.min.css" rel="stylesheet"> <!-- icons -->
     <!-- Main styles for this application-->
-    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.0.2/dist/css/coreui.min.css" rel="stylesheet"  crossorigin="anonymous">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     @yield('css')
@@ -66,7 +65,6 @@
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
 
-      {{-- @include('dashboard.shared.sidebar') --}}
       @include('dashboard.shared.nav-builder')
 
       @include('dashboard.shared.header')
@@ -85,10 +83,8 @@
 
 
     <!-- CoreUI and necessary plugins-->
+    <script src="{{ asset('js/coreui.bundle.min.js') }}"></script>
     <script src="{{ asset('js/coreui-utils.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.0.2/dist/js/coreui.bundle.min.js"  crossorigin="anonymous"></script>   
-    {{-- <script src="{{ secure_asset('js/coreui-utils.js') }}"></script>
-    <script src="/js/coreui-utils.js"></script> --}}
     @yield('javascript')
 
 
