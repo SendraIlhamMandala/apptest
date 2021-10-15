@@ -167,7 +167,7 @@
                 <div class="row">
                     <div class=" col-12  ">
                         <div class="card h-100">
-                            <div class="card-header h4">Kata Terakhir
+                            <div class="card-header h4">Kata
                                 <div class="card-header-actions"><a class="card-header-action"
                                         href="http://www.chartjs.org" target="_blank"><small
                                             class="text-muted">docs</small></a></div>
